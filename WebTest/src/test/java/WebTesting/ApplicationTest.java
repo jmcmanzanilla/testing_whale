@@ -43,9 +43,9 @@ public class ApplicationTest {
 	  @Test
 	  public void testVerifyTimeDiff() throws Exception {
 	    driver.get(baseUrl);
-	    driver.findElement(By.id("switzerland")).click();
-	    driver.findElement(By.cssSelector("button.buttonTime")).click();
-	    assertEquals(driver.findElement(By.id("answer1")).getText(), "The time difference between Switzerland and Philippines is 6 hours");
+	    driver.findElement(By.id("turkey")).click();
+		driver.findElement(By.id("turkeyid")).click();
+		assertEquals(driver.findElement(By.id("Turkeybtn")).getText(), "The time difference between Turkey and Philippines is -9 hours");
 	  }
   
   @AfterTest 
